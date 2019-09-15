@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/ColorPlayer.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/ColorPlayer.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Player/Particles.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -30,3 +31,9 @@ scale = Vector2( -1, -1 )
 texture = ExtResource( 2 )
 
 [node name="Particles" parent="." instance=ExtResource( 3 )]
+emitting = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+script = ExtResource( 4 )
