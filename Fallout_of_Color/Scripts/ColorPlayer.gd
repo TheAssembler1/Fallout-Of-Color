@@ -56,9 +56,16 @@ func Input(delta):
 	#going left and right
 	if left:
 		motion.x = -speed * delta
+		$Particles.emitting = true
+		$Particles.position.x = 16
+		$Particles.scale.x = -1
 	elif right:
 		motion.x = speed * delta
+		$Particles.emitting = true
+		$Particles.position.x = -16
+		$Particles.scale.x = 1
 	else:
+		$Particles.emitting = false
 		motion.x = 0
 	
 	if left && up && grounded:

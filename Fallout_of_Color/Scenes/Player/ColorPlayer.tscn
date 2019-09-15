@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/ColorPlayer.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/ColorPlayer.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/Player/Particles.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 16 )
@@ -25,4 +26,7 @@ editor/display_folded = true
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( -1, -1 )
 texture = ExtResource( 2 )
+
+[node name="Particles" parent="." instance=ExtResource( 3 )]
