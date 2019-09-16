@@ -21,7 +21,7 @@ hue_variation = 1.0
 hue_variation_random = 1.0
 
 [node name="Particles" type="Particles2D"]
-scale = Vector2( 1e-05, 1 )
+scale = Vector2( 1e-005, 1 )
 amount = 20
 local_coords = false
 process_material = SubResource( 1 )
