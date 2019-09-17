@@ -9,12 +9,13 @@
 emission_shape = 2
 emission_box_extents = Vector3( 8, 8, 1 )
 flag_disable_z = true
-gravity = Vector3( 0, 98, 0 )
-initial_velocity = -100.0
-angular_velocity = 50.0
+spread = 0.0
+gravity = Vector3( 0, 35, 0 )
+initial_velocity = -39.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-color = Color( 0.242188, 0.242188, 0.242188, 1 )
+scale = 2.0
+scale_random = 1.0
 
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 8, 8 )
@@ -27,6 +28,8 @@ texture = ExtResource( 2 )
 
 [node name="EnemyParticles" type="Particles2D" parent="."]
 material = SubResource( 1 )
+amount = 12
+local_coords = false
 process_material = SubResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
