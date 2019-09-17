@@ -19,10 +19,6 @@ config/name="Fallout_of_Color"
 run/main_scene="res://Scenes/PracticeJ.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-ColorPlayer="*res://Scenes/Player/ColorPlayer.tscn"
-
 [display]
 
 window/size/resizable=false

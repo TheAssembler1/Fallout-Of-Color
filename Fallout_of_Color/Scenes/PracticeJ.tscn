@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/BlackWorldBlock.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player/ColorPlayer.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/Player/Particles.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/Enemies/BehindEnemies.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Enemies/BehindEnemies.tscn" type="PackedScene" id=3]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -37,8 +36,5 @@ tile_data = PoolIntArray( 786467, 0, 0, 786468, 0, 0, 786469, 0, 0, 786470, 0, 0
 [node name="ColorPlayer" parent="." instance=ExtResource( 2 )]
 position = Vector2( 449.013, 319.974 )
 
-[node name="Particles2" parent="ColorPlayer" instance=ExtResource( 3 )]
-
-[node name="BehindEnemies" parent="." instance=ExtResource( 4 )]
+[node name="BehindEnemies" parent="." instance=ExtResource( 3 )]
 position = Vector2( 348.285, 423.546 )
-
