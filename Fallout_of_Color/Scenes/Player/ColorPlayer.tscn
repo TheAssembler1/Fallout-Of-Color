@@ -37,3 +37,4 @@ emitting = false
 current = true
 smoothing_enabled = true
 script = ExtResource( 4 )
+

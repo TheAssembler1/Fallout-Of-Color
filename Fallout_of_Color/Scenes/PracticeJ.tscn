@@ -40,4 +40,5 @@ position = Vector2( 449.013, 319.974 )
 [node name="Particles2" parent="ColorPlayer" instance=ExtResource( 3 )]
 
 [node name="BehindEnemies" parent="." instance=ExtResource( 4 )]
-position = Vector2( 357.525, 262.357 )
+position = Vector2( 348.285, 423.546 )
+
