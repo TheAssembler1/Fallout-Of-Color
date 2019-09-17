@@ -88,6 +88,13 @@ func Input(delta):
 		$Sprite.rotation_degrees += int(rotate_speed)
 		$Sprite.rotation_degrees = int($Sprite.rotation_degrees)
 	else:
+		if int($Sprite.rotation_degrees)%90 != 0:
+			var distance = int($Sprite.rotation_degrees)%90
+			var prev = $Sprite.rotation_degrees
+			$Sprite.rotation_degrees += distance
+			if int($Sprite.rotation_degrees)%90 != 0:
+				$Sprite.rotation_degrees = prev
+				$Sprite.rotation_degrees -= distance
 		rot_right = false
 		rot_left = false
 	
