@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Fallout_of_Color"
-run/main_scene="res://Scenes/PracticeJ.tscn"
+run/main_scene="res://Scenes/TitleScreen.tscn"
 config/icon="res://icon.png"
 
 [display]

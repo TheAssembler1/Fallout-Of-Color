@@ -38,3 +38,4 @@ position = Vector2( 449.013, 319.974 )
 
 [node name="BehindEnemies" parent="." instance=ExtResource( 3 )]
 position = Vector2( 348.285, 423.546 )
+
