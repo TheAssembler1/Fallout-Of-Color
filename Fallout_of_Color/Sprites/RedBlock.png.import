@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BlackWorldBlock.png-8e8835f82bc49ae3a64a2728dce63147.stex"
+path="res://.import/RedBlock.png-ac11a911968c1660ddc6541774c895d9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/BlackWorldBlock.png"
-dest_files=[ "res://.import/BlackWorldBlock.png-8e8835f82bc49ae3a64a2728dce63147.stex" ]
+source_file="res://Sprites/RedBlock.png"
+dest_files=[ "res://.import/RedBlock.png-ac11a911968c1660ddc6541774c895d9.stex" ]
 
 [params]
 
