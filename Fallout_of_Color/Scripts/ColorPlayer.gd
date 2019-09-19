@@ -52,6 +52,7 @@ func Input(delta):
 	left = Input.is_action_pressed("ui_left")
 	down = Input.is_action_pressed("ui_down")
 	up = Input.is_action_just_pressed("ui_up")
+
 	
 	#going left and right
 	if left:
@@ -80,6 +81,8 @@ func Input(delta):
 		rot_right = false
 		rot_left = false
 		motion.y += -jump_speed
+
+		
 		
 	if rot_left && $Sprite.rotation_degrees >= int(prev_degree-80):
 		$Sprite.rotation_degrees -= int(rotate_speed)
