@@ -38,6 +38,7 @@ jump_speed = 1000
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
+editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
@@ -65,4 +66,5 @@ explosiveness = 1.0
 randomness = 1.0
 local_coords = false
 process_material = SubResource( 3 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
