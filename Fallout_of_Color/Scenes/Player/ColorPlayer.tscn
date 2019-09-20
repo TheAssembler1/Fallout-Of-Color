@@ -66,5 +66,4 @@ explosiveness = 1.0
 randomness = 1.0
 local_coords = false
 process_material = SubResource( 3 )
-
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
