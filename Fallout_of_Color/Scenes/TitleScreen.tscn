@@ -33,6 +33,7 @@ margin_right = 623.0
 margin_bottom = 526.0
 icon = ExtResource( 4 )
 flat = true
+
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
