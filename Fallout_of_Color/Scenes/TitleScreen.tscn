@@ -9,28 +9,30 @@
 script = ExtResource( 1 )
 
 [node name="Play" type="Button" parent="."]
-margin_left = 384.0
-margin_top = 239.0
-margin_right = 606.0
-margin_bottom = 315.0
+anchor_right = 1.0
+margin_left = 401.0
+margin_top = 250.0
+margin_right = 623.0
+margin_bottom = 326.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 icon = ExtResource( 2 )
 flat = true
 
 [node name="Credits" type="Button" parent="."]
-margin_left = 383.625
-margin_top = 346.895
-margin_right = 605.625
-margin_bottom = 422.895
+margin_left = 401.0
+margin_top = 350.0
+margin_right = 623.0
+margin_bottom = 426.0
 icon = ExtResource( 3 )
+flat = true
 
 [node name="Quit" type="Button" parent="."]
-margin_left = 384.986
-margin_top = 461.167
-margin_right = 606.986
-margin_bottom = 537.167
+margin_left = 401.0
+margin_top = 450.0
+margin_right = 623.0
+margin_bottom = 526.0
 icon = ExtResource( 4 )
-
+flat = true
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]

@@ -1,0 +1,9 @@
+JACKSON:
+	1. Finish pause button
+	2. Implement enemy spawner
+	3. Finish the title screen
+
+NOAH:
+	1. Finish red block spawning
+	2. implement sound
+	3. Make red blocks fade into picture

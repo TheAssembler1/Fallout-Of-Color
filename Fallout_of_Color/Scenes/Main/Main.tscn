@@ -1,10 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/GameController.gd" type="Script" id=1]
-[ext_resource path="res://Scenes/MainSceneGUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Main/MainSceneGUI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Player/ColorPlayer.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprites/BlackWorldBlock.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Enemies/RedBlock.tscn" type="PackedScene" id=5]
+
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -61,4 +62,7 @@ visibility_rect = Rect2( -1000, -1000, 2000, 2000 )
 process_material = SubResource( 3 )
 
 [node name="RedBlock" parent="." instance=ExtResource( 5 )]
-position = Vector2( 19.2889, 563.161 )
+position = Vector2( 16, 560 )
+
+[node name="RedBlock2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 16, 528 )

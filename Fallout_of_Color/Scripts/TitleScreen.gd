@@ -14,12 +14,12 @@ func _ready():
 
 
 func _on_Play_button_up():
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	get_tree().change_scene("res://Scenes/Main/Main.tscn")
 	pass # Replace with function body.
 
 
 func _on_Credits_button_up():
-	get_tree().change_scene("res://Scenes/Main.tscn")
+	get_tree().change_scene("res://Scenes/Main/Main.tscn")
 	pass # Replace with function body.
 
 
