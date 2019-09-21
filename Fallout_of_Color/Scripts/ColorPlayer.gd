@@ -9,6 +9,7 @@ var grounded = false
 
 #says if the player is alive
 export var pause_or_dead = false
+var real_death = false
 
 #booleans for effect the block
 var rot_left = false
@@ -50,7 +51,10 @@ func _process(delta):
 #getting the player input
 func Input(delta):
 	
-	if pause_or_dead == false:
+	if pause_or_dead == true:
+		$Particles.emitting = false
+	
+	if pause_or_dead == false && real_death == false:
 		#applying gravity
 		motion.y += gravity * delta
 		
@@ -121,5 +125,6 @@ func _on_Area2D_body_entered(body):
 		$Sprite.visible = false
 		$DeathParticles.emitting = true
 		pause_or_dead = true
+		real_death = true
 		
 	pass # Replace with function body.

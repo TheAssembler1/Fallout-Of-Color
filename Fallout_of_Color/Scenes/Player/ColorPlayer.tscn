@@ -9,7 +9,7 @@
 extents = Vector2( 16, 16 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 18.7367, 17 )
+extents = Vector2( 17.1666, 17 )
 
 [sub_resource type="ParticlesMaterial" id=3]
 emission_shape = 3
@@ -38,7 +38,6 @@ jump_speed = 1000
 shape = SubResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
-editor/display_folded = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 2 )
