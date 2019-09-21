@@ -1,8 +1,7 @@
 extends StaticBody2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+#getting the wall variable
+onready var hit_wall = get_parent().get_node("ColorPlayer").hit_wall
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,5 +11,9 @@ func _ready():
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	hit_wall = get_parent().get_node("ColorPlayer").hit_wall
+	
+	if hit_wall:
+		queue_free()
+
