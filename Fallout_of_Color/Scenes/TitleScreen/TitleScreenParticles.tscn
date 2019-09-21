@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="Particles2D" type="Particles2D"]
+scale = Vector2( 0.98, 0.17 )
