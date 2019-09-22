@@ -44,7 +44,6 @@ margin_top = 300.0
 margin_right = 611.0
 margin_bottom = 370.0
 texture_normal = ExtResource( 5 )
-
 [connection signal="button_up" from="TextureButton" to="." method="_on_TextureButton_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
 [connection signal="button_up" from="MainMenu" to="." method="_on_MainMenu_button_up"]
