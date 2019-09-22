@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Start Button.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Scenes/Player/ColorPlayer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Player/Particles.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/TitleScreen/TitleScreenParticles.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sprites/Logo.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -101,6 +102,14 @@ z_index = -1
 amount = 24
 lifetime = 3.0
 process_material = SubResource( 5 )
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 308.0
+margin_top = 10.0
+margin_right = 708.0
+margin_bottom = 210.0
+texture_normal = ExtResource( 9 )
+
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
