@@ -29,4 +29,5 @@ texture_normal = ExtResource( 3 )
 stream = ExtResource( 4 )
 volume_db = -12.117
 autoplay = true
+
 [connection signal="button_up" from="Back" to="Creditcam" method="_on_Back_button_up"]
