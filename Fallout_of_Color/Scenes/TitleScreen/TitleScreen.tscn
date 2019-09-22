@@ -76,9 +76,9 @@ flat = true
 
 [node name="Quit" type="Button" parent="."]
 margin_left = 401.0
-margin_top = 300.0
+margin_top = 400.0
 margin_right = 623.0
-margin_bottom = 576.0
+margin_bottom = 476.0
 icon = ExtResource( 4 )
 flat = true
 
@@ -104,7 +104,7 @@ amount = 24
 lifetime = 3.0
 process_material = SubResource( 5 )
 
-[node name="TextureButton" type="TextureButton" parent="."]
+[node name="Logo" type="TextureButton" parent="."]
 margin_left = 317.0
 margin_top = 9.0
 margin_right = 717.0
@@ -113,7 +113,9 @@ texture_normal = ExtResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
+volume_db = -12.117
 autoplay = true
+
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]

@@ -20,7 +20,7 @@ func _on_Play_button_up():
 
 
 func _on_Credits_button_up():
-	get_tree().change_scene("res://Scenes/Main/Main.tscn")
+	get_tree().change_scene("res://Scenes/TitleScreen/Credits.tscn")
 	pass # Replace with function body.
 
 

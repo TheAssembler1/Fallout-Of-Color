@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/MainSceneGUI.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Pause.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Quit Button.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/MainMenu.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Retry.png" type="Texture" id=5]
 
 [node name="MainSceneGUI" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -20,4 +23,29 @@ margin_right = 1010.0
 margin_bottom = 45.0
 rect_scale = Vector2( 1.2, 1.2 )
 text = "SCORE = 0"
+
+[node name="Quit" type="TextureButton" parent="."]
+margin_left = 401.0
+margin_top = 500.0
+margin_right = 611.0
+margin_bottom = 570.0
+texture_normal = ExtResource( 3 )
+
+[node name="MainMenu" type="TextureButton" parent="."]
+margin_left = 401.0
+margin_top = 400.0
+margin_right = 611.0
+margin_bottom = 470.0
+texture_normal = ExtResource( 4 )
+
+[node name="Retry" type="TextureButton" parent="."]
+margin_left = 401.0
+margin_top = 300.0
+margin_right = 611.0
+margin_bottom = 370.0
+texture_normal = ExtResource( 5 )
+
 [connection signal="button_up" from="TextureButton" to="." method="_on_TextureButton_button_up"]
+[connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
+[connection signal="button_up" from="MainMenu" to="." method="_on_MainMenu_button_up"]
+[connection signal="button_up" from="Retry" to="." method="_on_Retry_button_up"]
