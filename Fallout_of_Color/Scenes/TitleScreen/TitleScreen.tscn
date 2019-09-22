@@ -104,10 +104,10 @@ lifetime = 3.0
 process_material = SubResource( 5 )
 
 [node name="TextureButton" type="TextureButton" parent="."]
-margin_left = 308.0
-margin_top = 10.0
-margin_right = 708.0
-margin_bottom = 210.0
+margin_left = 317.0
+margin_top = 9.0
+margin_right = 717.0
+margin_bottom = 209.0
 texture_normal = ExtResource( 9 )
 
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
