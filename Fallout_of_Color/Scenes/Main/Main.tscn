@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/GameController.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Main/MainSceneGUI.tscn" type="PackedScene" id=2]
@@ -28,6 +28,19 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 2
+emission_box_extents = Vector3( 980, 1, 1 )
+flag_disable_z = true
+gravity = Vector3( 0, 10, 0 )
+initial_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+linear_accel = 13.79
+linear_accel_random = 1.0
+scale = 8.0
+scale_random = 1.0
+
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -49,3 +62,11 @@ position = Vector2( -176, 560 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 autoplay = true
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 512, 615 )
+amount = 1000
+lifetime = 8.0
+randomness = 1.0
+visibility_rect = Rect2( -1000, -1000, 2000, 2000 )
+process_material = SubResource( 3 )
