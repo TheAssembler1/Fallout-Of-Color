@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Start Button.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scenes/Player/Particles.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/TitleScreen/TitleScreenParticles.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sprites/Logo.png" type="Texture" id=9]
+[ext_resource path="res://Sounds/bensound-dreams.wav" type="AudioStream" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -82,7 +83,7 @@ icon = ExtResource( 4 )
 flat = true
 
 [node name="TileMap" type="TileMap" parent="."]
-z_index = -1
+z_index = 6
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
 format = 1
@@ -110,6 +111,9 @@ margin_right = 717.0
 margin_bottom = 209.0
 texture_normal = ExtResource( 9 )
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+autoplay = true
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
