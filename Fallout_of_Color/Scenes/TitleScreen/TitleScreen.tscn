@@ -45,7 +45,6 @@ emission_box_extents = Vector3( 102, 30, 1 )
 flag_disable_z = true
 gravity = Vector3( 0, 98, 0 )
 initial_velocity = 1.0
-angular_velocity = 0.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 3.0
@@ -115,7 +114,6 @@ texture_normal = ExtResource( 9 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 10 )
 autoplay = true
-
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Credits" to="." method="_on_Credits_button_up"]
 [connection signal="button_up" from="Quit" to="." method="_on_Quit_button_up"]
